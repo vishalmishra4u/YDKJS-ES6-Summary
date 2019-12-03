@@ -1,0 +1,23 @@
+Transpiling : 
+The process of using a tool to convert your ES6 code into ES5 equivalent.
+```
+var foo = [1,2,3];
+
+var obj = {
+	foo		// means `foo: foo`
+};
+
+obj.foo;	// [1,2,3]
+```
+
+get converted into 
+
+```
+var foo = [1,2,3];
+
+var obj = {
+	foo: foo
+};
+
+obj.foo;	// [1,2,3]
+```
